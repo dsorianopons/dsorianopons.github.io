@@ -127,6 +127,29 @@
 										padding: 50px 2px;
 									}
 
+                                    .nav-button2 {
+                                        position: absolute;
+										top: 50%;
+										left: 1%;
+                                        background: rgb(128, 128, 128);
+                                        border: none;
+                                        font-size: 1em;
+                                        color: white;
+                                        cursor: pointer;
+                                        padding: 50px 30px;
+                                    }
+                                    .nav-button3 {
+                                        position: absolute;
+                                        top: 50%;
+                                        right: 1%;
+                                        background: rgb(128, 128, 128);
+                                        border: none;
+                                        font-size: 1em;
+                                        color: white;
+                                        cursor: pointer;
+                                        padding: 50px 30px;
+                                    }
+
 									nav-button:focus {
 										outline: none;
 									}
@@ -166,7 +189,7 @@
 										top: 15px;
 										right: 35px;
 										color: #fff;
-										font-size: 40px;
+										font-size: 60px;
 										font-weight: bold;
 										transition: 0.3s;
 									}
@@ -185,7 +208,9 @@
 									</div>
 									<div id="myModal" class="modal">
 										<span class="close" onclick="closeModal()">&times;</span>
+										<button class="nav-button2" onclick="previousImageModal()">&#9664;</button>
 										<img class="modal-content" id="img01" src="images/pic001.png" />
+										<button class="nav-button3" onclick="nextImageModal()">&#9654;</button>
 									</div>
 									<script>
 										const images = ["images/SCTwilightVoidChronicles/1.png"
@@ -218,6 +243,26 @@
 											currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
 											updateImage();
 										}
+
+										function previousImageModal() {
+											previousImage();
+                                            const modal = document.getElementById("myModal");
+                                            const modalImg = document.getElementById("img01");
+                                            const imgElement = document.getElementById("current_image");
+                                            modalImg.src = imgElement.src;
+                                            modalImg.alt = imgElement.alt;
+                                            console.log("Modal opened with image:", imgElement.src);
+										}
+
+                                        function nextImageModal() {
+                                            nextImage();
+                                            const modal = document.getElementById("myModal");
+                                            const modalImg = document.getElementById("img01");
+                                            const imgElement = document.getElementById("current_image");
+                                            modalImg.src = imgElement.src;
+                                            modalImg.alt = imgElement.alt;
+                                            console.log("Modal opened with image:", imgElement.src);
+                                        }
 
 										function openModal() {
 											const modal = document.getElementById("myModal");
