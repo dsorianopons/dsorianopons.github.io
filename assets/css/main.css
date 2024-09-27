@@ -33,6 +33,11 @@ body {
 	line-height: 1;
 }
 
+div{
+	text-align: justify;
+	text-justify: inter-word;
+}
+
 ol, ul {
 	list-style: none;
 }
