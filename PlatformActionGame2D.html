@@ -1,0 +1,322 @@
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Daniel Soriano Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="right-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<section id="header">
+
+				<!-- Logo -->
+				<h1><a href="index.html">Daniel Soriano Pons</a></h1>
+
+				<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="AboutMe.html">About Me</a></li>
+						<li class=" current">
+							<a href="#">Projects</a>
+							<ul>
+								<li><a href="TwilightVoidChronicles.html">Twilight Void Chronicles</a></li>
+							</ul>
+						</li>
+						<li><a href="#footer">Contact</a></li>
+					</ul>
+				</nav>
+			</section>
+
+			<!-- Main -->
+			<section id="main">
+				<div class="container">
+					<div class="row">
+						<div class="col-8 col-12-medium">
+
+							<!-- Content -->
+							<article class="box post">
+								<a href="#" class="image featured"><img src="images/1.jpeg" alt="" /></a>
+								<header>
+									<u><h2>Platform Action Game 2D</h2></u>
+									<p>&nbsp;</p>
+									<img id=" title_image" class="responsive" style="border:1px solid black" ; src="images/SCPlatform2D/0.png" width="680" height="420" />
+								</header>
+								<p>
+									This project is a 2D platformer game featuring interactive objects that present players with various challenges. 
+									Players will encounter enemies and navigate through platforms, making for an engaging and dynamic gaming experience.
+								</p>
+								<p>The main features included in this project have been: 
+								<ul>
+									<li>Use of multiple Colliders to interact with tile map, the platforms, enemies and items of the game.</li>
+									<li>Simple IA to emulate the enemy movement and attack pattern.</li>
+									<li>Includes collectible items.</li>
+									<li>Power-up and recovery items.</li>
+									<li>Range and close combat actions.</li>
+								</ul></p>
+								<iframe class="responsive2" width="680" height="420" src="https://www.youtube.com/embed/Uz6zoFii7G4?si=zOZPmD8FFbd_CDg0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+							</article>
+
+						</div>
+						<div class="col-4 col-12-medium">
+
+							<!-- Sidebar -->
+							<section class="box">
+								<a href="#" class="image featured"><img src="images/3.jpeg" alt="" /></a>
+								<header>
+									<h3>Play the demo: </h3>
+								</header>
+								<p>In this link you'll find the demo to play it. You just need to download the zip file and uncompress it on your computer.'</p>
+								<footer>
+									<a href="https://drive.google.com/file/d/1cacOO5Lji2sRABFHH3MPLMXU3XIK1Zgb/view?usp=drive_link" class="button alt">
+										<i class="fa fa-gamepad" aria-hidden="true"></i>
+										&nbsp;Download
+									</a>
+								</footer>
+							</section>
+
+							<section class="box">
+								<a href="#" class="image featured"><img src="images/4.jpeg" alt="" /></a>
+								<header>
+									<h3>Screenshots:</h3>
+								</header>
+								<style>
+									#image-container {
+										width: 280px;
+										height: 280px;
+										border: none;
+										display: flex;
+										justify-content: center;
+										align-items: center;
+									}
+
+									#image-wrapper {
+										display: flex;
+										justify-content: space-between;
+										align-content: center;
+										width: 100%;
+										height: 100%;
+									}
+
+									#image-container img {
+										max-width: 100%;
+										cursor: pointer;
+										max-height: 100%;
+										transition: transform 0.3s ease
+									}
+
+									.nav-button {
+										top: 50%;
+										background: rgb(229, 225, 225);
+										border: none;
+										font-size: 1em;
+										color: white;
+										cursor: pointer;
+										padding: 50px 2px;
+									}
+
+                                    .nav-button2 {
+                                        position: absolute;
+										top: 50%;
+										left: 1%;
+                                        background: rgb(128, 128, 128);
+                                        border: none;
+                                        font-size: 1em;
+                                        color: white;
+                                        cursor: pointer;
+                                        padding: 50px 30px;
+                                    }
+                                    .nav-button3 {
+                                        position: absolute;
+                                        top: 50%;
+                                        right: 1%;
+                                        background: rgb(128, 128, 128);
+                                        border: none;
+                                        font-size: 1em;
+                                        color: white;
+                                        cursor: pointer;
+                                        padding: 50px 30px;
+                                    }
+
+									nav-button:focus {
+										outline: none;
+									}
+
+									.modal {
+										display: none;
+										position: fixed;
+										z-index: 1;
+										left: 0;
+										top: 0;
+										width: 100%;
+										height: 100%;
+										overflow: auto;
+										background-color: rgb(229, 225, 225, 0.5);
+									}
+
+									.responsive {
+										max-width: 100%;
+										height:auto;
+									}
+
+                                    .responsive2 {
+                                        max-width: 100%;
+										max-height: 100%;
+                                    }
+                                    .modal-content {
+                                        margin: 80px auto 40px;
+                                        align-items: center;
+                                        display: block;
+                                        width: 80%;
+                                        align-content: center;
+                                        justify-content: space-between;
+                                    }
+
+									.close {
+										position: absolute;
+										top: 15px;
+										right: 35px;
+										color: #fff;
+										font-size: 60px;
+										font-weight: bold;
+										transition: 0.3s;
+									}
+
+										.close:hover, .close:focus {
+											color: #bbb;
+											text-decoration: none;
+											cursor: pointer;
+										}
+								</style>
+								<body>
+									<div id="image-container">
+										<button class="nav-button prev-button" onclick="previousImage()">&#9664;</button>
+										<img id="current_image" src="images/SCPlatform2D/1.png" alt="Imagen 1" onClick="openModal()" />
+										<button class="nav-button next-button" onclick="nextImage()">&#9654;</button>
+									</div>
+									<div id="myModal" class="modal">
+										<span class="close" onclick="closeModal()">&times;</span>
+										<button class="nav-button2" onclick="previousImageModal()">&#9664;</button>
+										<img class="modal-content" id="img01" src="images/SCPlatform2D/1.png" top="50%" />
+										<button class="nav-button3" onclick="nextImageModal()">&#9654;</button>
+									</div>
+									<script>
+										const images = ["images/SCPlatform2D/1.png"
+                                            , "images/SCPlatform2D/2.png"
+                                            , "images/SCPlatform2D/3.png"
+                                            , "images/SCPlatform2D/4.png"
+                                            , "images/SCPlatform2D/5.png"
+                                            , "images/SCPlatform2D/6.png"
+                                            , "images/SCPlatform2D/7.png"
+                                            , "images/SCPlatform2D/8.png"
+                                            , "images/SCPlatform2D/9.png"
+											, "images/SCPlatform2D/10.png"]
+										let currentIndex = 0;
+										function updateImage() {
+											const imgElement = document.getElementById("current_image");
+											imgElement.src = images[currentIndex];
+											imgElement.alt = 'Imagen ${currentIndex +1}';
+										}
+
+										function previousImage() {
+											currentIndex = (currentIndex == 0) ? images.length - 1 : currentIndex - 1;
+											updateImage();
+										}
+
+										function nextImage() {
+											currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
+											updateImage();
+										}
+
+										function previousImageModal() {
+											previousImage();
+                                            const modal = document.getElementById("myModal");
+                                            const modalImg = document.getElementById("img01");
+                                            const imgElement = document.getElementById("current_image");
+                                            modalImg.src = imgElement.src;
+                                            modalImg.alt = imgElement.alt;
+                                            console.log("Modal opened with image:", imgElement.src);
+										}
+
+                                        function nextImageModal() {
+                                            nextImage();
+                                            const modal = document.getElementById("myModal");
+                                            const modalImg = document.getElementById("img01");
+                                            const imgElement = document.getElementById("current_image");
+                                            modalImg.src = imgElement.src;
+                                            modalImg.alt = imgElement.alt;
+                                            console.log("Modal opened with image:", imgElement.src);
+                                        }
+
+										function openModal() {
+											const modal = document.getElementById("myModal");
+											const modalImg = document.getElementById("img01");
+											const imgElement = document.getElementById("current_image");
+											modal.style.display = "block";
+											modalImg.src = imgElement.src;
+											modalImg.alt = imgElement.alt;
+											console.log("Modal opened with image:", imgElement.src);
+										}
+										function closeModal() {
+											const modal = document.getElementById("myModal");
+											modal.style.display = "none";
+										}
+										window.onclick = function (event) {
+											const modal = document.getElementById("myModal");
+											if (event.target === modal) {
+												modal.style.display = "none";
+											}
+										}
+									</script>
+								</body>
+
+							</section>
+
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Footer -->
+			<section id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-4 col-12-medium">
+							<h3> Mail</h3>
+							<p> <a href="#"> dsorianopons@gmail.com</a> </p>
+							</ul >
+						</div>
+						<div class="col-4 col-12-medium">
+							<h3> Phone</h3>
+							<p> (+34) 660 700 132</p>
+						</div>
+						<section>
+							<ul class="social">
+								<li> <a class="icon brands fa-github" href="#"> <span class="label"> GitHub</span> </a> </li>
+								<li> <a class="icon brands fa-linkedin-in" href="https://www.linkedin.com/in/daniel-soriano-pons/"> <span class="label"> LinkedIn</span> </a> </li>
+							</ul>
+						</section>
+					</div>
+				</div>
+			</section>
+		</div>
+									</section >
+
+									</div >
+									<!-- Scripts -->
+									<script src="assets/js/jquery.min.js" > </script >
+									<script src="assets/js/jquery.dropotron.min.js" > </script >
+									<script src="assets/js/browser.min.js" > </script >
+									<script src="assets/js/breakpoints.min.js" > </script >
+									<script src="assets/js/util.js" > </script >
+									<script src="assets/js/main.js" > </script >
+
+									</body >
+									</html >
